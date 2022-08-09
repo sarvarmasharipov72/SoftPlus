@@ -3,7 +3,7 @@ public class TaskOne {
         if (price.length == 0) {
             return price;
         }
-        if (discount == 0) {
+        if (discount > 0  && discount < 100) {
             return price;
         }
         if (readLength < 1) {
