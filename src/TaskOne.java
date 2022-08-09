@@ -9,7 +9,7 @@ public class TaskOne {
         if (readLength < 1) {
             return price;
         }
-        if (offset >= price.length) {
+        if (offset >= price.length || offset < 0) {
             return price;
         }
         if (offset + readLength > price.length) {
